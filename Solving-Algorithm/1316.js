@@ -26,7 +26,6 @@ for(i = 1 ; i <= input[0] ; i++){
     count += 1
     result = []
     result2 = []
-
 }
 
 console.log(count)

@@ -1,3 +1,5 @@
-2
-yzyzy
-zyzyz
+4
+aba
+abab
+abcabc
+a
