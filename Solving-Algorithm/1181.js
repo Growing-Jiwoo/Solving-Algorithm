@@ -5,9 +5,12 @@ let setarr = [...new Set(input)];
 
 setarr.shift();
 
+// console.log(setarr)
+
+setarr.map((ele) => console.log(ele));
+
 let result = setarr.sort().sort((a, b) => a.length - b.length).join("\n");
 
-console.log(result)
 
 
 // 풀이2
