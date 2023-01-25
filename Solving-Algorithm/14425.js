@@ -1,6 +1,6 @@
 let input = require('fs').readFileSync('14425.txt').toString().trim().split('\n');
 
-const [N, M] = input[0].split(' ').map(Number);
+const [N] = input[0].split(' ').map(Number);
 const N_data = input.slice(1, 1 + N);
 const M_data = input.slice(1 + N);
 
