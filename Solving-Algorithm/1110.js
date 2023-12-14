@@ -1,24 +1,14 @@
-const N = parseInt(require('fs').readFileSync('1110.txt').toString().trim());
+const input = require("fs").readFileSync("1110.txt").toString().trim();
 
-let strN = N.toString();
+let N = parseInt(input);
 
-let originalNumber = N;
+let currentNum = N;
 let cycleLength = 0;
 
-while (true) {
-    if (N < 10) {
-        strN = "0" + N.toString();
-    }
-
-    let sum = parseInt(strN[0]) + parseInt(strN[1]);
-
-    strN = strN[1] + (sum % 10).toString();
-
-    cycleLength++;
-
-    if (parseInt(strN) === originalNumber) {
-        break;
-    }
+for (; currentNum !== N || cycleLength === 0; ) {
+  let sum = Math.floor(currentNum / 10) + (currentNum % 10);
+  currentNum = (currentNum % 10) * 10 + (sum % 10);
+  cycleLength++;
 }
 
 console.log(cycleLength);
