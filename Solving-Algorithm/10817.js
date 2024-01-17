@@ -4,5 +4,5 @@ const input = require("fs")
   .split(" ")
   .map(Number);
 
-input.sort((a, b) => b - a); // Sort the input in descending order
+input.sort((a, b) => b - a);
 console.log(input[1]);
