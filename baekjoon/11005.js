@@ -3,7 +3,6 @@ let [N, M] = require("fs")
   .toString()
   .trim()
   .split(" ");
-
 let result = "";
 
 while (N > 0) {
